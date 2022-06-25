@@ -1,8 +1,82 @@
 @use "abstract" as *;
-// head
-body {
-    background-color: $yellow;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background-image: url("../Home/Bathome1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// head
+header {
+    margin: 0 auto;
+    width: 80%;
+    border-left: $border-style;
+    border-right: $border-style;
+    border-bottom: $border-style;
+    .link_header {
+        @include flex-center(row,
+        space-between);
+        padding: 40px;
+        &_grp a {
+            font-family: rajhdani;
+            color: #fff;
+            font-size: 36px;
+            margin-left: 15px;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+    }
+}
+
+// begin section entete
+.container {
+    border-left: $border-style;
+    border-right: $border-style;
+    width: 80%;
+    margin: 0 auto;
+    @include flex-center(column,
+    center);
+    &_paragraphe {
+        margin-top: 200px;
+        width: 570px;
+        font-family: spaceGrotesk;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+    }
+    .title_batman {
+        margin-top: 40px;
+        font-family: spaceGrotesk;
+        font-size: 36px;
+        color: #fff;
+    }
+    &_grpButton {
+        margin-top: 30px;
+    }
+    a {
+        font-family: rajhdani;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        line-height: 60px;
+        margin-left: 15px;
+        margin-right: 15px;
+        @extend %bgg_Button;
+    }
+    &_flecheDown {
+        @include flex-center(column,
+        center);
+        margin-top: 140px;
+    }
+}
+
+//end section entete
 //main
 //footer

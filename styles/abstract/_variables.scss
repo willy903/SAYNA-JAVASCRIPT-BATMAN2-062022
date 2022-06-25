@@ -4,3 +4,7 @@ $blue-dark: #19587D;
 $red: #B11313;
 $black-light: #0D0E09;
 $grey: #C4C4C4;
+$border-style: 3px solid hsla(0, 1%, 45%, 0.247);
+%bgg_Button {
+    background: linear-gradient(123deg, rgba(237, 222, 191, 0.5) 0%, rgba(137, 0, 9, 0.5) 90%);
+}
