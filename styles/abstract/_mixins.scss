@@ -4,3 +4,9 @@
     justify-content: #{$horizontal};
     align-items: center;
 }
+
+@mixin margin ($top, $right, $left) {
+    margin-top: #{$top};
+    margin-right: #{$right};
+    margin-left: #{$left};
+}
