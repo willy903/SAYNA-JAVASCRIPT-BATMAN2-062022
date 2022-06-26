@@ -23,7 +23,7 @@ body {
 
 header {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-bottom: 3px solid hsla(0deg, 1%, 45%, 0.247);
@@ -47,7 +47,7 @@ header .link_header_grp a {
 .container {
   border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -89,4 +89,19 @@ header .link_header_grp a {
   justify-content: center;
   align-items: center;
   margin-top: 140px;
+}
+
+.box-card {
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box-card_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

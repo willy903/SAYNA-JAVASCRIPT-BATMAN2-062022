@@ -16,14 +16,30 @@
 }
 
 body {
+  background-color: #000;
   background-image: url("../Home/Bathome1.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: rajhdani;
+  color: #fff;
+}
+
+p {
+  font-family: spaceGrotesk;
+  color: #fff;
+}
+
+h6 {
+  font-family: rajhdani;
+  color: #fff;
 }
 
 header {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-bottom: 3px solid hsla(0deg, 1%, 45%, 0.247);
@@ -47,7 +63,7 @@ header .link_header_grp a {
 .container {
   border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -89,6 +105,51 @@ header .link_header_grp a {
   justify-content: center;
   align-items: center;
   margin-top: 140px;
+}
+
+.box {
+  padding: 50px;
+  margin: auto;
+  width: 77.5%;
+  border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
+  border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
+}
+.box_paragraphe {
+  width: 800px;
+}
+.box_paragraphe p {
+  text-align: justify;
+  font-size: 18px;
+}
+.box_card {
+  margin-top: 60px;
+}
+.box_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+.box_card .item {
+  border: 3px solid red;
+}
+
+.item_actor {
+  border: 1px white solid;
+  height: 80px;
+}
+.item_actor .acteur {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 200px;
+}
+.item_actor .acteur h6 {
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

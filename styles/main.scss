@@ -5,15 +5,31 @@
 }
 
 body {
+    background-color: #000;
     background-image: url("../Home/Bathome1.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: rajhdani;
+    color: #fff;
+}
+
+p {
+    font-family: spaceGrotesk;
+    color: #fff;
+}
+
+h6 {
+    font-family: rajhdani;
+    color: #fff;
 }
 
 // head
 header {
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     border-left: $border-style;
     border-right: $border-style;
     border-bottom: $border-style;
@@ -36,7 +52,7 @@ header {
 .container {
     border-left: $border-style;
     border-right: $border-style;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     @include flex-center(column,
     center);
@@ -78,5 +94,46 @@ header {
 }
 
 //end section entete
+.box {
+    padding: 50px;
+    margin: auto;
+    width: 77.5%;
+    border-left: $border-style;
+    border-right: $border-style;
+    &_paragraphe {
+        width: 800px;
+        p {
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+    &_card {
+        margin-top: 60px;
+    }
+    &_card {
+        @include flex-center(row,
+        space-between);
+        width: 100%;
+        background-color: black;
+        .item {
+            border: 3px solid red;
+        }
+    }
+}
+
+.item_actor {
+    border: 1px white solid;
+    height: 80px;
+    .acteur {
+        @include flex-center(row,
+        center);
+        background-color: red;
+        width: 200px;
+        h6 {
+            margin-left: 5px;
+        }
+    }
+}
+
 //main
 //footer
