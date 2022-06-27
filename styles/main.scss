@@ -4,11 +4,31 @@
     padding: 0;
 }
 
-body {
+:root {
+    scroll-behavior: smooth;
+}
+
+#home_body {
     background-color: #000;
     background-image: url("../Home/Bathome1.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.aside {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    left: 50%;
+    .aside-item {
+        @include flex-center(column,
+        center);
+        gap: 20px;
+        position: absolute;
+        transform: translate(50%, -50%);
+        right: 0;
+    }
 }
 
 h1 {
@@ -45,13 +65,23 @@ header {
             15px);
             text-decoration: none;
         }
+        .indexhome {
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.6rem;
+        }
+        .indexgame {
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.6rem;
+        }
     }
 }
 
 // begin section entete
 .container {
-    @extend %bordur;
-    width: 85%;
     margin: 0 auto;
     @include flex-center(column,
     center);
@@ -105,8 +135,7 @@ header {
 .box {
     padding: 50px;
     margin: auto;
-    width: 77.5%;
-    @extend %bordur;
+    position: relative;
     &_paragraphe {
         width: 800px;
         p {
@@ -124,21 +153,18 @@ header {
         space-between);
         width: 100%;
         background-color: black;
-        .item {
-            border: 3px solid red;
-        }
     }
 }
 
 .item_actor {
-    border: 1px white solid;
-    padding: 10px;
+    background: rgba(180, 131, 70, 0.1);
+    border-top: 1px #4e411db6 solid;
     height: 80px;
     @include flex-center(row,
     center);
     position: relative;
     .acteur {
-        @include flex-center(row,
+        @include flex-center(column,
         center);
         @extend %bgg_Button;
         width: 240px;
@@ -146,8 +172,8 @@ header {
         border-radius: 40px;
         img {
             position: absolute;
-            width: 70px;
-            top: 5px;
+            width: 80px;
+            top: 7px;
             left: 15px;
         }
         h6 {
@@ -163,9 +189,7 @@ header {
 
 // faddincard
 .Mutli {
-    width: 80%;
     margin: 0 auto;
-    @extend %bordur;
     .txt_presentation {
         padding: 60px
     }
@@ -361,7 +385,7 @@ textarea {
 //main
 //footer
 .bloc-citation {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     @extend %bordur;
     @include flex-center(row,
@@ -430,7 +454,7 @@ textarea {
 }
 
 .nav-footer {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     @extend %bordur;
 }
@@ -442,4 +466,154 @@ textarea {
 .bgclick {
     background-color: #49a2c9b2;
     border: solid 1px #70aec9;
+}
+
+// section game
+#game_body {
+    background-color: #000;
+    background-image: url("../Game/Batgame_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.play_presentation {
+    margin: 0 auto;
+    width: 85%;
+    color: white;
+    h1 {
+        font-family: rajhdani;
+        font-size: 46px;
+        padding-left: 50px;
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    .container_flecheDown {
+        padding-bottom: 80px
+    }
+    @extend %bordur;
+}
+
+.Quizz {
+    margin: 0 auto;
+    width: 75%;
+    padding: 5%;
+    @extend %bordur;
+    .G0 {
+        @include flex-center(column,
+        center);
+        h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .img_game {
+            margin-top: 30px;
+            width: 80%;
+        }
+        .quiz_btn {
+            @extend %quizBtn;
+            margin-top: 50px;
+        }
+    }
+}
+
+.content a img:hover,
+.link_logo a img:hover {
+    @extend %yellow_filter;
+}
+
+.G1 {
+    h1 {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px
+    }
+    button {
+        margin-top: 40px;
+        @extend %quizBtn;
+    }
+}
+
+.container_question {
+    @include flex-center(row,
+    center);
+    align-items: flex-start;
+    .question h1 {
+        text-align: center;
+        padding-bottom: 100px;
+        padding-top: 60px;
+    }
+    .question {
+        margin-left: 20px;
+        form label {
+            display: block;
+            padding: 8px;
+            margin: 5px;
+            background-color: #c4c4c4;
+            color: white;
+            font-family: space-grotek;
+            font-size: 20px;
+            input {
+                margin: 10px;
+                border-radius: 0;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+//animation
+.link_header_grp a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.6rem;
+}
+
+.container,
+.box,
+.justiceLeague,
+.Mutli,
+.contact {
+    position: relative;
+    animation: mymove 3s;
+}
+
+@keyframes mymove {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.allBorder {
+    @extend %bordur;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.item_actor {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+}
+
+.box_card {
+    height: 600px;
+}
+
+.box_card .item {
+    position: relative;
+}
+
+.box_card .item:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    .item_actor {
+        visibility: visible;
+    }
 }

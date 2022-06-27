@@ -6,7 +6,7 @@
   background: linear-gradient(123deg, rgb(237, 222, 191) 2%, rgba(39, 68, 85, 0.685) 100%);
 }
 
-header, .container, .box, .Mutli, .bloc-citation, .nav-footer {
+header, .bloc-citation, .nav-footer, .play_presentation, .Quizz, .allBorder {
   border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
 }
@@ -49,6 +49,22 @@ textarea {
   outline: none;
 }
 
+.Quizz .G0 .quiz_btn, .G1 button {
+  background: linear-gradient(123deg, rgb(30, 37, 47) 0%, rgb(180, 131, 70) 65%);
+  width: 280px;
+  height: 60px;
+  font-family: rajhdani;
+  color: white;
+  font-size: 22px;
+  border: none;
+  outline: none;
+}
+
+.content a img:hover,
+.link_logo a img:hover {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(53%) saturate(1342%) hue-rotate(358deg) brightness(103%) contrast(109%);
+}
+
 @font-face {
   font-family: rajhdani;
   src: url("../../police/Rajdhani-Medium.ttf");
@@ -62,11 +78,33 @@ textarea {
   padding: 0;
 }
 
-body {
+:root {
+  scroll-behavior: smooth;
+}
+
+#home_body {
   background-color: #000;
   background-image: url("../Home/Bathome1.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.aside {
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  left: 50%;
+}
+.aside .aside-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: 0;
 }
 
 h1 {
@@ -105,9 +143,20 @@ header .link_header_grp a {
   margin-left: 15px;
   text-decoration: none;
 }
+header .link_header .indexhome {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+header .link_header .indexgame {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
 
 .container {
-  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -163,7 +212,7 @@ header .link_header_grp a {
 .box {
   padding: 50px;
   margin: auto;
-  width: 77.5%;
+  position: relative;
 }
 .box_paragraphe {
   width: 800px;
@@ -185,13 +234,10 @@ header .link_header_grp a {
   width: 100%;
   background-color: black;
 }
-.box_card .item {
-  border: 3px solid red;
-}
 
 .item_actor {
-  border: 1px white solid;
-  padding: 10px;
+  background: rgba(180, 131, 70, 0.1);
+  border-top: 1px rgba(78, 65, 29, 0.7137254902) solid;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -201,7 +247,7 @@ header .link_header_grp a {
 }
 .item_actor .acteur {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 240px;
@@ -210,8 +256,8 @@ header .link_header_grp a {
 }
 .item_actor .acteur img {
   position: absolute;
-  width: 70px;
-  top: 5px;
+  width: 80px;
+  top: 7px;
   left: 15px;
 }
 .item_actor .acteur h6 {
@@ -224,7 +270,6 @@ header .link_header_grp a {
 }
 
 .Mutli {
-  width: 80%;
   margin: 0 auto;
 }
 .Mutli .txt_presentation {
@@ -400,7 +445,7 @@ header .link_header_grp a {
   text-align: center;
 }
 .bloc-citation {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -472,7 +517,7 @@ header .link_header_grp a {
 }
 
 .nav-footer {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -483,6 +528,145 @@ header .link_header_grp a {
 .bgclick {
   background-color: rgba(73, 162, 201, 0.6980392157);
   border: solid 1px #70aec9;
+}
+
+#game_body {
+  background-color: #000;
+  background-image: url("../Game/Batgame_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.play_presentation {
+  margin: 0 auto;
+  width: 85%;
+  color: white;
+}
+.play_presentation h1 {
+  font-family: rajhdani;
+  font-size: 46px;
+  padding-left: 50px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.play_presentation .container_flecheDown {
+  padding-bottom: 80px;
+}
+
+.Quizz {
+  margin: 0 auto;
+  width: 75%;
+  padding: 5%;
+}
+.Quizz .G0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Quizz .G0 h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.Quizz .G0 .img_game {
+  margin-top: 30px;
+  width: 80%;
+}
+.Quizz .G0 .quiz_btn {
+  margin-top: 50px;
+}
+
+.G1 h1 {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.G1 button {
+  margin-top: 40px;
+}
+
+.container_question {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.container_question .question h1 {
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 60px;
+}
+.container_question .question {
+  margin-left: 20px;
+}
+.container_question .question form label {
+  display: block;
+  padding: 8px;
+  margin: 5px;
+  background-color: #c4c4c4;
+  color: white;
+  font-family: space-grotek;
+  font-size: 20px;
+}
+.container_question .question form label input {
+  margin: 10px;
+  border-radius: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.link_header_grp a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+
+.container,
+.box,
+.justiceLeague,
+.Mutli,
+.contact {
+  position: relative;
+  animation: mymove 3s;
+}
+
+@keyframes mymove {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+.allBorder {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.item_actor {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.box_card {
+  height: 600px;
+}
+
+.box_card .item {
+  position: relative;
+}
+
+.box_card .item:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.box_card .item:hover .item_actor {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -56,3 +56,18 @@ $bgc_newsletter: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
     border: none;
     outline: none;
 }
+
+%quizBtn {
+    background: linear-gradient(123deg, rgba(30, 37, 47, 1) 0%, rgba(180, 131, 70, 1) 65%);
+    width: 280px;
+    height: 60px;
+    font-family: rajhdani;
+    color: white;
+    font-size: 22px;
+    border: none;
+    outline: none;
+}
+
+%yellow_filter {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(53%) saturate(1342%) hue-rotate(358deg) brightness(103%) contrast(109%);
+}
