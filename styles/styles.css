@@ -680,4 +680,15 @@ header .link_header .indexgame {
   visibility: visible;
 }
 
+.caherOUI {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.caherNON {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 800ms;
+}
+
 /*# sourceMappingURL=styles.css.map */
