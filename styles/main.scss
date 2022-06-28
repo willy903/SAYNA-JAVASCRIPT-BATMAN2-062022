@@ -21,6 +21,7 @@
     transform: translate(-50%, -50%);
     width: 85%;
     left: 50%;
+    z-index: 2;
     .aside-item {
         @include flex-center(column,
         center);
@@ -522,6 +523,7 @@ textarea {
 }
 
 .G1 {
+    display: none;
     h1 {
         text-align: center;
         padding-top: 80px;
@@ -570,6 +572,11 @@ textarea {
     text-underline-offset: 0.6rem;
 }
 
+.justiceLeague {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 .container,
 .box,
 .justiceLeague,
@@ -588,7 +595,8 @@ textarea {
     }
 }
 
-.allBorder {
+.allBorder,
+.allBorder2 {
     @extend %bordur;
     width: 85%;
     margin: 0 auto;

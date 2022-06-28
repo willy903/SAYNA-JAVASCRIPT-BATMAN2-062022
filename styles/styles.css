@@ -6,7 +6,8 @@
   background: linear-gradient(123deg, rgb(237, 222, 191) 2%, rgba(39, 68, 85, 0.685) 100%);
 }
 
-header, .bloc-citation, .nav-footer, .play_presentation, .Quizz, .allBorder {
+header, .bloc-citation, .nav-footer, .play_presentation, .Quizz, .allBorder,
+.allBorder2 {
   border-left: 3px solid hsla(0deg, 1%, 45%, 0.247);
   border-right: 3px solid hsla(0deg, 1%, 45%, 0.247);
 }
@@ -95,6 +96,7 @@ textarea {
   transform: translate(-50%, -50%);
   width: 85%;
   left: 50%;
+  z-index: 2;
 }
 .aside .aside-item {
   display: flex;
@@ -576,6 +578,9 @@ header .link_header .indexgame {
   margin-top: 50px;
 }
 
+.G1 {
+  display: none;
+}
 .G1 h1 {
   text-align: center;
   padding-top: 80px;
@@ -623,6 +628,11 @@ header .link_header .indexgame {
   text-underline-offset: 0.6rem;
 }
 
+.justiceLeague {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 .container,
 .box,
 .justiceLeague,
@@ -640,7 +650,8 @@ header .link_header .indexgame {
     left: 0%;
   }
 }
-.allBorder {
+.allBorder,
+.allBorder2 {
   width: 85%;
   margin: 0 auto;
 }
