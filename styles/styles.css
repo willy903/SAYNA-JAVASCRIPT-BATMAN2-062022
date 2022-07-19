@@ -50,7 +50,7 @@ textarea {
   outline: none;
 }
 
-.Quizz .G0 .quiz_btn, .G1 button {
+.Quizz .G0 .quiz_btn, .G1 button, .boutonConf button {
   background: linear-gradient(123deg, rgb(30, 37, 47) 0%, rgb(180, 131, 70) 65%);
   width: 280px;
   height: 60px;
@@ -578,9 +578,6 @@ header .link_header .indexgame {
   margin-top: 50px;
 }
 
-.G1 {
-  display: none;
-}
 .G1 h1 {
   text-align: center;
   padding-top: 80px;
@@ -588,37 +585,6 @@ header .link_header .indexgame {
 }
 .G1 button {
   margin-top: 40px;
-}
-
-.container_question {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-start;
-}
-.container_question .question h1 {
-  text-align: center;
-  padding-bottom: 100px;
-  padding-top: 60px;
-}
-.container_question .question {
-  margin-left: 20px;
-}
-.container_question .question form label {
-  display: block;
-  padding: 8px;
-  margin: 5px;
-  background-color: #c4c4c4;
-  color: white;
-  font-family: space-grotek;
-  font-size: 20px;
-}
-.container_question .question form label input {
-  margin: 10px;
-  border-radius: 0;
-  width: 15px;
-  height: 15px;
 }
 
 .link_header_grp a:hover {
@@ -689,6 +655,45 @@ header .link_header .indexgame {
   opacity: 1;
   transform: translateX(0);
   transition: 800ms;
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 1;
+    background-color: rgb(0, 77, 243);
+    border: 1px solid rgb(182, 0, 0);
+  }
+}
+.question_bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+.question_bloc .img-question {
+  width: 300px;
+}
+.question_bloc .questionsComposition {
+  width: 650px;
+}
+.question_bloc .questionsComposition div {
+  color: #fff;
+  background-color: #C4C4C4;
+  margin: 5px;
+  padding: 8px;
+}
+.question_bloc .questionsComposition div label {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.boutonConf {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.boutonConf button {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

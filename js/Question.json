@@ -1,0 +1,161 @@
+[{
+        "question": "Quel est l'autre nom de l'Homme-Mystère ?",
+        "response": [{
+                "text": "Le Sphinx",
+                "isGood": true
+            },
+            {
+                "text": "Saphir",
+                "isGood": true
+            },
+            {
+                "text": "Le Joker",
+                "isGood": true
+            }
+        ]
+    },
+    {
+        "question": "Quelle est l'ancienne profession de Harley Quinn ?",
+        "response": [{
+                "text": "Infirmière",
+                "isGood": false
+            },
+            {
+                "text": "Psychiatre",
+                "isGood": true
+            },
+            {
+                "text": "Dev. Front",
+                "isGood": false
+            }
+        ]
+    },
+    {
+        "question": "Quel est l'objet fétiche de Double Face ?",
+        "response": [{
+                "text": "Un couteau",
+                "isGood": false
+            },
+            {
+                "text": "Une photo du logo de Sayna",
+                "isGood": false
+            },
+            {
+                "text": "Une pièce",
+                "isGood": true
+            }
+        ]
+    },
+    {
+        "question": "Quelle ville Batman défend-il ?",
+        "response": [{
+                "text": "Gotham City",
+                "isGood": true
+            },
+            {
+                "text": "Paris",
+                "isGood": false
+            },
+            {
+                "text": "Tananarive",
+                "isGood": false
+            }
+        ]
+    },
+    {
+        "question": "Tim Burton a réalisé 2 Batman, qui jouait Batman ?",
+        "response": [{
+                "text": "Gotham City",
+                "isGood": true
+            },
+            {
+                "text": "Hell's Kitchen",
+                "isGood": false
+            },
+            {
+                "text": "Starling City",
+                "isGood": false
+            }
+        ]
+    },
+    {
+        "question": "Dans son premier Batman (1989) Jack Nicholson jouait :",
+        "response": [{
+                "text": "Le Joker",
+                "isGood": true
+            },
+            {
+                "text": "Le Pingouin",
+                "isGood": false
+            },
+            {
+                "text": "L'homme Mystère",
+                "isGood": false
+            }
+        ]
+    },
+    {
+        "question": "Qui sont les créateurs de Batman ?",
+        "response": [{
+                "text": "Bob Kane et Bill Finger",
+                "isGood": true
+            },
+            {
+                "text": "Stan Lee et Bill Finger",
+                "isGood": false
+            },
+            {
+                "text": "Le grand Mike",
+                "isGood": true
+            }
+        ]
+    },
+    {
+        "question": "Quel est le prénom des parents du jeune Bruce Wayne ?",
+        "response": [{
+                "text": "Matina et Adam",
+                "isGood": false
+            },
+            {
+                "text": "Martha & Thomas",
+                "isGood": true
+            },
+            {
+                "text": "Loic et Tom",
+                "isGood": false
+            }
+        ]
+    },
+    {
+        "question": "Qui est Jonathan Crane ?",
+        "response": [{
+                "text": "L'épouvantail",
+                "isGood": true
+            },
+            {
+                "text": "Un joueur du PSG",
+                "isGood": false
+            },
+            {
+                "text": "L'homme Mystère",
+                "isGood": false
+            }
+        ]
+    },
+    {
+        "question": "Batman, c'est aussi le nom d'une ville en...",
+        "response": [{
+                "text": "France",
+                "isGood": false
+            },
+            {
+                "text": "Madagascar",
+                "isGood": false
+            },
+            {
+                "text": "Turquie",
+                "isGood": true
+            }
+        ]
+    }
+]
