@@ -50,7 +50,7 @@ textarea {
   outline: none;
 }
 
-.Quizz .G0 .quiz_btn, .G1 button, .boutonConf button {
+.Quizz .G0 .quiz_btn, .G1 button, .boutonConf button, #btn-start-quizz {
   background: linear-gradient(123deg, rgb(30, 37, 47) 0%, rgb(180, 131, 70) 65%);
   width: 280px;
   height: 60px;
@@ -694,6 +694,50 @@ header .link_header .indexgame {
 }
 .boutonConf button {
   margin-top: 100px;
+}
+
+.popup {
+  position: absolute;
+  width: 70%;
+  top: 220px;
+  left: 250px;
+}
+.popup-content {
+  background: linear-gradient(103deg, #665228, #9f682a);
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4rem 2rem;
+  box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.popup-content h1 {
+  text-decoration: underline;
+}
+.popup-close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+  cursor: pointer;
+  color: white;
+}
+.popup-title {
+  margin-bottom: 3.5rem;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
+.popup-title::after {
+  content: "";
+  position: absolute;
+  top: 102%;
+  left: 0;
+  width: 100%;
+}
+.popup-body {
+  margin-bottom: 3.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

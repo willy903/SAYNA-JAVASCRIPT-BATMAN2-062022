@@ -647,3 +647,52 @@ textarea {
         margin-top: 100px;
     }
 }
+
+.popup {
+    position: absolute;
+    width: 70%;
+    top: 220px;
+    left: 250px;
+    &-content {
+        background: $grad-orange-opaque-2;
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 4px;
+        padding: 4rem 2rem;
+        box-shadow: 0 0 10rem 0 $black-3;
+        position: relative;
+        h1 {
+            text-decoration: underline;
+        }
+    }
+    &-close-btn {
+        position: absolute;
+        right: 1rem;
+        top: 0.75rem;
+        cursor: pointer;
+        color: white;
+    }
+    &-title {
+        margin-bottom: 3.5rem;
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        &::after {
+            // we use the ::after to be able to add some spaces between the text and the underline
+            content: "";
+            position: absolute;
+            top: 102%;
+            left: 0;
+            width: 100%;
+        }
+    }
+    &-body {
+        margin-bottom: 3.5rem;
+    }
+}
+
+#btn-start-quizz {
+    @extend %quizBtn;
+}

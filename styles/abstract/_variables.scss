@@ -3,7 +3,10 @@ $yellow-light: #F8F184;
 $blue-dark: #19587D;
 $red: #B11313;
 $black-light: #0D0E09;
+$black-1: #000;
+$black-3: rgba($black-1, 0.5);
 $grey: #C4C4C4;
+$grad-orange-opaque-2: linear-gradient(103deg, #665228, #9f682a);
 $border-style: 3px solid hsla(0, 1%, 45%, 0.247);
 $bgc_newsletter: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
 %bgg_Button {
